@@ -1,73 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FYKO Shop</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYKO Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-<div class="logo">FYKO</div>
+    <h1>FYKO</h1>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-<a href="cart.html">🛒 <span id="cart-count">0</span></a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">🛒 Warenkorb</a>
+    </nav>
 </header>
 
-<section class="featured">
+<section class="shop">
 
-<h2>FYKO COLLECTION</h2>
+    <div class="product">
+        <img src="https://via.placeholder.com/350x450" alt="FYKO Shirt">
 
-<div class="products">
+        <h2>FYKO T-Shirt</h2>
 
-<div class="card">
-<img src="images/shirt1.jpg" alt="Classic Tee">
-<h3>FYKO CLASSIC</h3>
-<p>30 CHF</p>
-<button onclick="addToCart('FYKO CLASSIC',30)">
-ADD TO CART
-</button>
-</div>
+        <p class="price">23 €</p>
 
-<div class="card">
-<img src="images/shirt2.jpg" alt="Oversized Tee">
-<h3>FYKO OVERSIZED</h3>
-<p>30 CHF</p>
-<button onclick="addToCart('FYKO OVERSIZED',30)">
-ADD TO CART
-</button>
-</div>
-
-<div class="card">
-<img src="images/shirt3.jpg" alt="Vintage Tee">
-<h3>FYKO VINTAGE</h3>
-<p>30 CHF</p>
-<button onclick="addToCart('FYKO VINTAGE',30)">
-ADD TO CART
-</button>
-</div>
-
-<div class="card">
-<img src="images/hoodie.jpg" alt="Hoodie">
-<h3>FYKO HOODIE</h3>
-<p>60 CHF</p>
-<button onclick="addToCart('FYKO HOODIE',60)">
-ADD TO CART
-</button>
-</div>
-
-</div>
+        <button onclick="addToCart()">
+            In den Warenkorb
+        </button>
+    </div>
 
 </section>
-
-<footer>
-<p>© 2026 FYKO • BUILT DIFFERENT.</p>
-</footer>
 
 <script src="script.js"></script>
 
